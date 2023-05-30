@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Hanken+Grotesk:wght@500;700;800&family=Kumbh+Sans:wght@400;700&family=Lexend+Deca&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+}
+
+/* COLORS */
+:root {
+    --MAIN-BG: hsl(185, 75%, 39%);
+    --INFO-BG: white;
+    --NAMECOLOR: hsl(230, 13%, 18%);
+    --TEXTCOLOR:hsl(227, 10%, 46%);
+}
+
+body {
+    background: url("images/bg-pattern-top.svg"),url("images/bg-pattern-bottom.svg"),var(--MAIN-BG);
+    background-repeat: no-repeat, no-repeat;
+    background-position: left -150px, right 300px;
+    background-size: 700px;
+}
+
+.container {
+    width: min(80%,400px);
+    margin: 100px auto;
+    border-radius: 20px;
+}
+
+.image_container {
+    width: 100%;
+    position: relative;
+}
+
+.bubble_image {
+    width: 100%;
+    height: auto;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.profile_pic {
+    border: 5px solid var(--INFO-BG);   
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,-50%);   
+}
+
+.info_container {
+    background-color: var(--INFO-BG);
+    border-radius: 0px 0px 20px 20px;
+}
+
+
+.name {
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 1.5rem;
+    padding: 65px 20px 0px 20px;
+    text-align: center;
+    color: var(--NAMECOLOR);
+}
+
+.age {
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-family: 'Lexend Deca', sans-serif;
+    color: var(--AGECOLOR);
+    font-weight: 400;
+    margin-left: 5px;
+}
+
+.location {
+    color: var(--TEXTCOLOR);
+    text-align: center;
+    padding: 10px 0px 40px 0px;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+
+.followers, .likes, .photos {
+    text-align: center;
+}
+
+.count {
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--NAMECOLOR);
+}
+
+.categories {
+    color: var(--TEXTCOLOR);
+    font-family: 'Kumbh Sans', sans-serif;
+    font-weight: lighter;
+    font-size: 0.7rem;
+}
+
+.attribution {
+    text-align: center;
+    font-size: 1.1rem;
+    margin: 50px 0 10px 0;
+
+}
+.attribution > a {
+    text-decoration: none;
+}
+
+.frontendmentor {
+    color: aqua;
+}
+
+.author {
+    color: aqua;
+}
+
